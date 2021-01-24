@@ -1,0 +1,24 @@
+{
+	"name": "jwt-app",
+	"version": "1.0.0",
+	"description": "author by VHM",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js",
+		"debug": "node --inspect index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@hapi/joi": "^17.1.1",
+		"bcrypt": "^5.0.0",
+		"dotenv": "^8.1.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.7.3",
+		"morgan": "^1.10.0",
+		"signale": "^1.4.0"
+	}
+}

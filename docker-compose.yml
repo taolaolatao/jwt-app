@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    container_name: jwt-app
+    restart: unless-stopped
+    build: ./
+    ports:
+      - '8080:3000'
+    volumes:
+      - .:/www/sites
+      - /www/sites/node_modules
+    links:
+      - db
+    depends_on:
+      - db
+  db:
+    container_name: mongo-connect
+    image: mongo
+    restart: unless-stopped
+    ports:
+      - '27018:27017'
