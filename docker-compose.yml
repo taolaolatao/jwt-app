@@ -15,8 +15,8 @@ services:
     depends_on:
       - db
   db:
-    container_name: mongo-connect
     image: mongo
+    container_name: mongo-connect
     restart: unless-stopped
     ports:
       - '27018:27017'
